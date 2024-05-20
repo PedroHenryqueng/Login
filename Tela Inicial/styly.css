@@ -1,0 +1,198 @@
+/* FORMATAÇÃO PADRÃO BÁSICA  */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(to bottom, #0fcb57, #47d772, #69e38c, #86eea5, #a2f9bd);
+  }
+  /* CORPO GERAL DA PÁGINA */
+  .contaner{
+    padding-top: 30px;
+    margin: auto;
+    width: 90%;
+  }
+  /* CABEÇALHO - HEADER  */
+  header {
+    background-color: rgb(103, 231, 118);
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .subtitulo{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+  }
+  /* CONTEINER FLEXBOX */
+  section {
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  /* MENU NAV */
+  nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-color: rgb(103, 231, 118);
+    padding: 20px;
+  }
+  
+  /* MENU NAV UL */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  nav ul h2 {
+    margin: 20px;
+  }
+  nav ul li {
+    margin: 20px;
+  }
+  /* FLEXBOX BLOCO ARTICLE */
+  article {
+    -webkit-flex: 4;
+    -ms-flex: 4;
+    flex: 4;
+    background-color: rgb(103, 231, 118);
+    padding: 10px;
+  }
+  /* FLEXBOX BLOCO ARTICLE COM DIVS */
+  article div {
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+  }
+  /* BLOCO VÍDEO */
+  .video{
+    text-align: center;
+    width: 100%;
+  }
+  /* BLOCO IMAGENS */
+  .imagens{
+    width: 100%;
+  }
+  /* BLOCO TABELA */
+  .table, th, td{
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgb(13, 221, 107);
+  }
+  
+  
+  /* BLOCO FORMULÁRIO FIELDSET */
+  fieldset{
+    width: 100%;
+    padding: 10px;
+  }
+  /* BLOCO FORMULÁRIO INPUTS */
+  .input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border-color: 1px solid rgb(55, 228, 69);
+  }
+  
+  /* BLOCO FORMULÁRIO BUTTON CADASTRO */
+  .btn-add{
+    background-color: #0fcb57;
+    border-radius: 5px;
+    border: 0px;
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+  /* BLOCO FORMULÁRIO BUTTON RESET */
+  .btn-clen{
+    background-color: #cb0f0f;
+    border-radius: 5px;
+    border: 0px;
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* BLOCO FOOTER - RODAPÉ DA PÁGINA */
+  footer {
+    color: white;
+  }
+  .footer{
+    background-color: rgb(103, 231, 118);
+    margin: auto;
+    width: 100%;
+   
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: #fff;
+  }
+  .footer h2{
+    text-align: center; 
+    border-bottom: 2px solid #fff;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+  }
+  .footer ul a {
+    color:rgb(63, 61, 61);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .footer ul a:hover{
+    color: rgb(8, 8, 8);
+    font-weight: 400;
+    font-size: 20px;
+    transition: 1.5s;
+    cursor: pointer;
+  }
+  /* BLOCO FOOTER FLEX BOX */
+  .flex-container {
+    display: flex;
+  }
+  .flex-container > div {
+    color: rgb(19, 18, 18) !important;
+    width: 33%;
+    margin: 10px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  /* FORMATAÇÃO DA LISTA E LINKS */
+  ul {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 5px;
+  }
+  /* LINK E VISITAÇÃO */
+  a:link,a:visited {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  /* HOVER DO LINK */
+  a:hover {
+    color: rgb(34, 33, 33);
+    font-weight: 200;
+    border-radius: 10px;
+    transition: 1.5s;
+    cursor: pointer;
+  }
+  /* LINK SELECIONADO */
+  a:active {
+    color: black;
+  }
+  
+  /*  RESPONSIVE - CONTENT INSIDE HE SECTION */
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
